@@ -5,7 +5,7 @@
 */
 
 #pragma once
-#include<vector>
+#include<list>
 #include<iostream>
 
 class Grade; 
@@ -22,12 +22,12 @@ public:
     int getId() const;
     void setId(int);
 
-    std :: vector <Grade *> getSubject() const;
+    std :: list <Grade *> getSubject() const;
     void setSubject(Grade *);
 
 private:
     int _id;
-    std :: vector <Grade *> _subjects;
+    std :: list <Grade *> _subjects;
 };
 
 class Grade
