@@ -3,10 +3,32 @@
     @file node.cpp, twoWaysList.cpp
     @author Maksym Kazhaiev
 */
-#pragma once
-#include "Student.h"
 
-class Student;
+#pragma once
+#include<vector>
+#include<iostream>
+
+class Grade; 
+
+class Student
+{
+public:
+    Student();
+    Student(int);
+    ~Student();
+
+    void print() const;
+
+    int getId() const;
+    void setId(int);
+
+    std :: vector <Grade *> getSubject() const;
+    void setSubject(Grade *);
+
+private:
+    int _id;
+    std :: vector <Grade *> _subjects;
+};
 
 class Grade
 {

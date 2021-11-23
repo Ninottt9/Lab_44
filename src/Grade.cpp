@@ -1,16 +1,16 @@
-#include<iostream>
-#include"Grade.h"
-#include"Student.h"
+#include"Lab7.h"
 
 Grade :: Grade ()
 {
     _student = 0;
+    _grade = 0;
 }
 
 Grade :: Grade (int grade, Student student)
 {
     _student = student;
     _grade = grade;
+    _student.setSubject(this);
 }
 
 Grade :: ~Grade()
@@ -40,5 +40,5 @@ void Grade :: setGrade(int grade)
 
 void Grade :: print() const
 {
-    std :: cout << "Grade print value=" << getGrade() << " studentID=" << getId() <<"\n";
+    std :: cout << "Grade print value=" << getGrade() << " studentID=" << _student.getId() <<"\n";
 }
