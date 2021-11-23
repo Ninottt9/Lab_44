@@ -28,7 +28,7 @@ void Grade :: setStudent(Student student)
     _student = student;
 }
 
-int Grade :: getGrade()
+const int Grade :: getGrade()
 {
     return _grades.front();
 }
@@ -40,5 +40,5 @@ void Grade :: setGrade(int grade)
 
 void Grade :: print()
 {
-    std :: cout << "Grade print value=" << _grades.front() << "studentID=" << _student.getId() <<"\n";
+    std :: cout << "Grade print value=" << getGrade() << " studentID=" << _student.getId() <<"\n";
 }

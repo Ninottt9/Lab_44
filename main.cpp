@@ -12,17 +12,17 @@ int main() {
   const Grade denisMath (4, denis);
   denis.print();
 
-  const Grade denisPhysics (5, denis);
+  /*const */Grade denisPhysics (5, denis);
   denis.print();
 
-  /*denisPhysics.print();
+  denisPhysics.print();
 
 
   cout<<"MARK\n";
   const Student mark (3);
   mark.print();
 
-  const Grade markPhysics (3, mark);
+ /*const */ Grade markPhysics (3, mark);
   mark.print();
   markPhysics.print();
 
@@ -30,7 +30,7 @@ int main() {
   mark.print();
   denis.print();
 
-  return 0;*/
+  return 0;
 }
 
 /* //OUTPUT: ./Lab08

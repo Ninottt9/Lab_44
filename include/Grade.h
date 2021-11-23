@@ -19,7 +19,7 @@ public:
     Student getStudent();
     void setStudent(Student);
 
-    int getGrade();
+    const int getGrade();
     void setGrade(int);
 private:
     std :: list <int> _grades;

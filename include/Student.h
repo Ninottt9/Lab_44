@@ -14,7 +14,7 @@ public:
 
     void print() const;
 
-    int getId();
+    const int getId();
     void setId(int);
 
 private:
