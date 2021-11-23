@@ -15,7 +15,7 @@ int main() {
   const Grade denisPhysics (5, denis);
   denis.print();
 
-  denisPhysics.print();
+  /*denisPhysics.print();
 
 
   cout<<"MARK\n";
@@ -30,7 +30,7 @@ int main() {
   mark.print();
   denis.print();
 
-  return 0;
+  return 0;*/
 }
 
 /* //OUTPUT: ./Lab08

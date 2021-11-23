@@ -16,7 +16,17 @@ Student :: ~Student()
 
 }
 
+int Student :: getId()
+{
+    return _id;
+}
+
+void Student :: setId(int id)
+{
+    _id = id;
+}
+
 void Student :: print() const
 {
-    std :: cout << "Student print ID=" << _id <<"grades: ";
+    std :: cout << "Student print ID=" << _id <<" grades: " << "\n";
 }

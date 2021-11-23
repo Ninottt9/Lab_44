@@ -1,22 +1,24 @@
-#include"Grade.h"
 #include<iostream>
+#include"Grade.h"
+#include"Student.h"
 
 Grade :: Grade ()
 {
-
+    _student = 0;
 }
 
 Grade :: Grade (int grade, Student student)
 {
-
+    _student = student;
+    _grades.push_back(grade);
 }
 
 Grade :: ~Grade()
 {
-
+    //delete [] list;
 }
 
-Student Grade :: getStudent() const
+Student Grade :: getStudent()
 {
     return _student;
 }
@@ -26,7 +28,17 @@ void Grade :: setStudent(Student student)
     _student = student;
 }
 
-void Grade :: print() const
+int Grade :: getGrade()
 {
-    std :: cout << "Grade print value=" << _grade << "studentID=" << 3 << " << id <<"grades: ";
+    return _grades.front();
+}
+
+void Grade :: setGrade(int grade)
+{
+    _grades.push_back(grade);
+}
+
+void Grade :: print()
+{
+    std :: cout << "Grade print value=" << _grades.front() << "studentID=" << _student.getId() <<"\n";
 }
