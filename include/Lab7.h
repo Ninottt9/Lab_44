@@ -22,12 +22,13 @@ public:
     int getId() const;
     void setId(int);
 
-    std :: vector <Grade *> getSubject() const;
+    //std :: vector <Grade *> getSubject() const;
     void setSubject(Grade *);
 
 private:
     int _id;
-    std :: vector <Grade *> _subjects;
+    Grade ** _subjects;
+    int _count;
 };
 
 class Grade
