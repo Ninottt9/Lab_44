@@ -32,13 +32,14 @@ std :: vector <Grade *> Student :: getSubject() const
 
 void Student :: setSubject(Grade *grade)
 {
+    std :: cout<<"LOL, why?\n";
     _subjects.push_back(grade);
 }
 
 void Student :: print() const
 {
     std :: cout << "Student print ID=" << _id <<" grades: ";
-    for(int i=0; i < _subjects.size(); i++)
+    for(long unsigned int i=0; i < _subjects.size(); i++)
     {
         std :: cout << _subjects[i] -> getGrade()<<" ";
     }
