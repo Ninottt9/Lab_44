@@ -7,19 +7,20 @@
 #include "Student.h"
 #include <list>
 
-class Grade
+class Grade : public
+Student
 {
 public:
     Grade ();
     Grade (int, Student);
 	~Grade();
 
-    void print();
+    void print() const;
 
     Student getStudent();
     void setStudent(Student);
 
-    const int getGrade();
+    int getGrade() const;
     void setGrade(int);
 private:
     std :: list <int> _grades;
