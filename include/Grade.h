@@ -5,7 +5,6 @@
 */
 #pragma once
 #include "Student.h"
-#include <list>
 
 class Grade : public
 Student
@@ -23,6 +22,6 @@ public:
     int getGrade() const;
     void setGrade(int);
 private:
-    std :: list <int> _grades;
+    int _grade;
     Student _student;
 };

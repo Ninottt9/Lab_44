@@ -10,7 +10,7 @@ Grade :: Grade ()
 Grade :: Grade (int grade, Student student)
 {
     _student = student;
-    _grades.push_back(grade);
+    _grade = grade;
 }
 
 Grade :: ~Grade()
@@ -30,12 +30,12 @@ void Grade :: setStudent(Student student)
 
 int Grade :: getGrade() const
 {
-    return _grades.front();
+    return _grade;
 }
 
 void Grade :: setGrade(int grade)
 {
-    _grades.push_back(grade);
+    _grade = grade;
 }
 
 void Grade :: print() const
