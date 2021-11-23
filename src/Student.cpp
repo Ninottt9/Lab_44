@@ -25,22 +25,23 @@ void Student :: setId(int id)
     _id = id;
 }
 
-std :: vector <Grade *> Student :: getSubject() const
+/*std :: vector <Grade *> Student :: getSubject() const
 {
     return _subjects;
-}
+}*/
 
-void Student :: setSubject(Grade *grade)
+void Student :: addGrade(int grade)
 {
-    _subjects.push_back(grade);
+    std :: cout << grade <<" Nu\n";
+    _grades.push_back(grade);
 }
 
 void Student :: print() const
 {
     std :: cout << "Student print ID=" << _id <<" grades: ";
-    for(int i=0; i < _subjects.size(); i++)
+    for(long unsigned int i=0; i < _grades.size(); i++)
     {
-        std :: cout << _subjects[i] -> getGrade()<<" ";
+        std :: cout << _grades[i] <<" ";
     }
     std :: cout<<"\n";
 }

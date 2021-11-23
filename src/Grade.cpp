@@ -6,11 +6,11 @@ Grade :: Grade ()
     _grade = 0;
 }
 
-Grade :: Grade (int grade, Student student)
+Grade :: Grade (int grade, Student *student)
 {
     _student = student;
     _grade = grade;
-    _student.setSubject(this);
+    _student -> addGrade(grade);
 }
 
 Grade :: ~Grade()
@@ -18,12 +18,12 @@ Grade :: ~Grade()
     //delete [] list;
 }
 
-Student Grade :: getStudent()
+Student * Grade :: getStudent()
 {
     return _student;
 }
 
-void Grade :: setStudent(Student student)
+void Grade :: setStudent(Student * student)
 {
     _student = student;
 }
@@ -40,5 +40,5 @@ void Grade :: setGrade(int grade)
 
 void Grade :: print() const
 {
-    std :: cout << "Grade print value=" << getGrade() << " studentID=" << _student.getId() <<"\n";
+    std :: cout << "Grade print value=" << getGrade() << " studentID=" << _student -> getId() <<"\n";
 }

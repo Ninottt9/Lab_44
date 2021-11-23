@@ -22,29 +22,29 @@ public:
     int getId() const;
     void setId(int);
 
-    std :: vector <Grade *> getSubject() const;
-    void setSubject(Grade *);
+    //std :: vector <Grade *> getSubject() const;
+    void addGrade(int);
 
 private:
     int _id;
-    std :: vector <Grade *> _subjects;
+    std :: vector <int> _grades;
 };
 
 class Grade
 {
 public:
     Grade ();
-    Grade (int, Student);
+    Grade (int, Student *);
 	~Grade();
 
     void print() const;
 
-    Student getStudent();
-    void setStudent(Student);
+    Student * getStudent();
+    void setStudent(Student *);
 
     int getGrade() const;
     void setGrade(int);
 private:
     int _grade;
-    Student _student;
+    Student *_student;
 };
