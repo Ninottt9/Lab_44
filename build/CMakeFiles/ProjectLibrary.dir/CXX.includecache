@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/node.h
+iostream
+-
+
+../include/twoWaysList.h
+node.h
+../include/node.h
+
+/mnt/d/Uczenie/AGH/III semestr/PPO/Miha/Lab_44/src/node.cpp
+node.h
+/mnt/d/Uczenie/AGH/III semestr/PPO/Miha/Lab_44/src/node.h
+
+/mnt/d/Uczenie/AGH/III semestr/PPO/Miha/Lab_44/src/twoWaysList.cpp
+twoWaysList.h
+/mnt/d/Uczenie/AGH/III semestr/PPO/Miha/Lab_44/src/twoWaysList.h
+

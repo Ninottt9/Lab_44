@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/lab07.h
+node.h
+../include/node.h
+twoWaysList.h
+../include/twoWaysList.h
+
+../include/node.h
+iostream
+-
+
+../include/twoWaysList.h
+node.h
+../include/node.h
+
+/mnt/d/Uczenie/AGH/III semestr/PPO/Miha/Lab_44/main.cpp
+lab07.h
+/mnt/d/Uczenie/AGH/III semestr/PPO/Miha/Lab_44/lab07.h
+lab07.h
+/mnt/d/Uczenie/AGH/III semestr/PPO/Miha/Lab_44/lab07.h
+cstring
+-
+iostream
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -Wall -g  -shared -Wl,-soname,libProjectLibrary.so -o libProjectLibrary.so CMakeFiles/ProjectLibrary.dir/src/node.cpp.o CMakeFiles/ProjectLibrary.dir/src/twoWaysList.cpp.o 

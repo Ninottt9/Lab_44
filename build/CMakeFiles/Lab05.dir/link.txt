@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -g  -rdynamic CMakeFiles/Lab05.dir/main.cpp.o  -o Lab05  -Wl,-rpath,"/mnt/d/Uczenie/AGH/III semestr/PPO/Miha/Lab_44/build" libProjectLibrary.so 

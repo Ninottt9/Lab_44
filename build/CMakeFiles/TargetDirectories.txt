@@ -1,0 +1,4 @@
+/mnt/d/Uczenie/AGH/III semestr/PPO/Miha/Lab_44/build/CMakeFiles/rebuild_cache.dir
+/mnt/d/Uczenie/AGH/III semestr/PPO/Miha/Lab_44/build/CMakeFiles/edit_cache.dir
+/mnt/d/Uczenie/AGH/III semestr/PPO/Miha/Lab_44/build/CMakeFiles/Lab05.dir
+/mnt/d/Uczenie/AGH/III semestr/PPO/Miha/Lab_44/build/CMakeFiles/ProjectLibrary.dir
